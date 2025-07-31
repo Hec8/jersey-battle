@@ -88,17 +88,17 @@ const AdminDashboard = () => {
             {/* Header */}
             <header className="bg-white shadow-sm border-b border-gray-200">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex justify-between items-center h-16">
-                        <div className="flex items-center">
-                            <h1 className="text-2xl font-bold text-gray-900">Administration</h1>
+                    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center h-auto sm:h-16 py-4 sm:py-0">
+                        <div className="flex items-center mb-2 sm:mb-0">
+                            <h1 className="text-xl sm:text-2xl font-bold text-gray-900">Administration</h1>
                         </div>
-                        <div className="flex items-center space-x-4">
-                            <div className="text-sm text-gray-500">
+                        <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-4">
+                            <div className="text-xs sm:text-sm text-gray-500">
                                 Connecté en tant que <span className="font-medium text-gray-900">{user?.email}</span>
                             </div>
                             <button
                                 onClick={handleLogout}
-                                className="flex items-center px-3 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-colors"
+                                className="flex items-center px-3 py-2 text-xs sm:text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-colors"
                             >
                                 <LogOut className="w-4 h-4 mr-2" />
                                 Déconnexion
@@ -109,22 +109,22 @@ const AdminDashboard = () => {
             </header>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-                <div className="flex">
+                <div className="flex flex-col lg:flex-row">
                     {/* Sidebar */}
-                    <div className="w-64 mr-8">
+                    <div className="w-full lg:w-64 lg:mr-8 mb-6 lg:mb-0">
                         <nav className="bg-white rounded-lg shadow-sm p-4">
-                            <ul className="space-y-2">
+                            <ul className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-1 gap-2 lg:space-y-2 lg:gap-0">
                                 {menuItems.map((item) => (
                                     <li key={item.id}>
                                         <button
                                             onClick={() => setActiveTab(item.id)}
-                                            className={`w-full flex items-center px-3 py-2 rounded-md text-sm font-medium transition-colors ${activeTab === item.id
-                                                ? 'bg-blue-50 text-blue-700 border-r-2 border-blue-700'
+                                            className={`w-full flex flex-col sm:flex-row lg:flex-row items-center justify-center lg:justify-start px-3 py-2 rounded-md text-xs sm:text-sm font-medium transition-colors ${activeTab === item.id
+                                                ? 'bg-blue-50 text-blue-700 border-r-0 lg:border-r-2 border-blue-700'
                                                 : 'text-gray-700 hover:bg-gray-50'
                                                 }`}
                                         >
-                                            <item.icon className="w-5 h-5 mr-3" />
-                                            {item.label}
+                                            <item.icon className="w-4 h-4 sm:w-5 sm:h-5 mb-1 sm:mb-0 sm:mr-3 lg:mr-3" />
+                                            <span className="text-center lg:text-left">{item.label}</span>
                                         </button>
                                     </li>
                                 ))}

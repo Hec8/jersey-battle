@@ -100,7 +100,7 @@ const Hero = () => {
                         whileHover={{ scale: 1.1, rotateY: 10 }}
                         transition={{ duration: 0.3 }}
                     >
-                        <div className="w-40 h-48 sm:w-48 sm:h-60 md:w-64 md:h-72 lg:w-80 lg:h-96 bg-white rounded-2xl shadow-2xl relative overflow-hidden">
+                        <div className="w-48 h-56 sm:w-56 sm:h-68 md:w-64 md:h-72 lg:w-80 lg:h-96 bg-white rounded-2xl shadow-2xl relative overflow-hidden">
                             {/* Image du maillot Mbappé */}
                             <div className="relative w-full h-full">
                                 <Image
@@ -143,7 +143,7 @@ const Hero = () => {
                         whileHover={{ scale: 1.1, rotateY: -10 }}
                         transition={{ duration: 0.3 }}
                     >
-                        <div className="w-40 h-48 sm:w-48 sm:h-60 md:w-64 md:h-72 lg:w-80 lg:h-96 bg-gradient-to-b from-blue-600 to-red-600 rounded-2xl shadow-2xl relative overflow-hidden">
+                        <div className="w-48 h-56 sm:w-56 sm:h-68 md:w-64 md:h-72 lg:w-80 lg:h-96 bg-gradient-to-b from-blue-600 to-red-600 rounded-2xl shadow-2xl relative overflow-hidden">
                             {/* Image du maillot Yamal */}
                             <div className="relative w-full h-full">
                                 <Image

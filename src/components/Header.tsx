@@ -115,10 +115,10 @@ const Header = () => {
                                     <span>Déconnexion</span>
                                 </button>
                             ) : (
-                                <button className="flex items-center space-x-2 text-white hover:text-blue-400 transition-colors">
+                                <a href="/admin" className="flex items-center space-x-2 text-white hover:text-blue-400 transition-colors">
                                     <User size={16} />
                                     <span>Admin</span>
-                                </button>
+                                </a>
                             )}
                         </nav>
                     </motion.div>

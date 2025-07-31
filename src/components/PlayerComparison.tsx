@@ -8,7 +8,7 @@ const PlayerComparison = () => {
         mbappe: {
             name: "Kylian Mbappé",
             nickname: "Le Roi des Bleus",
-            age: 25,
+            age: 26,
             position: "Ailier/Attaquant",
             club: "Real Madrid",
             nationality: "France 🇫🇷",
@@ -29,7 +29,7 @@ const PlayerComparison = () => {
         yamal: {
             name: "Lamine Yamal",
             nickname: "Le Joyau du Barça",
-            age: 17,
+            age: 18,
             position: "Ailier Droit",
             club: "FC Barcelone",
             nationality: "Espagne 🇪🇸",
