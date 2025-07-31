@@ -1,0 +1,78 @@
+{
+    "name": "Jersey Battle - Comparatif Maillots Football",
+    "short_name": "Jersey Battle",
+    "description": "Comparatif des maillots de Mbappé (Real Madrid) et Lamine Yamal (FC Barcelone)",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#1e40af",
+    "orientation": "portrait-primary",
+    "scope": "/",
+    "lang": "fr",
+    "dir": "ltr",
+    "categories": [
+        "sports",
+        "shopping",
+        "lifestyle"
+    ],
+    "icons": [
+        {
+            "src": "/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "/screenshot-wide.jpg",
+            "sizes": "1280x720",
+            "type": "image/jpeg",
+            "form_factor": "wide"
+        },
+        {
+            "src": "/screenshot-narrow.jpg",
+            "sizes": "720x1280",
+            "type": "image/jpeg",
+            "form_factor": "narrow"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Comparatif Maillots",
+            "short_name": "Comparatif",
+            "description": "Comparer les maillots Mbappé vs Lamine Yamal",
+            "url": "/comparatif",
+            "icons": [
+                {
+                    "src": "/icon-192.png",
+                    "sizes": "192x192"
+                }
+            ]
+        },
+        {
+            "name": "Avis Clients",
+            "short_name": "Avis",
+            "description": "Lire les avis des clients",
+            "url": "/avis",
+            "icons": [
+                {
+                    "src": "/icon-192.png",
+                    "sizes": "192x192"
+                }
+            ]
+        }
+    ]
+}

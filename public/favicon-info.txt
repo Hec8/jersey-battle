@@ -1,0 +1,14 @@
+# Favicon Creation Guide
+
+Créez un fichier favicon.ico et placez-le dans le dossier public/.
+
+Vous pouvez utiliser un générateur en ligne comme:
+- https://favicon.io/
+- https://realfavicongenerator.net/
+
+Créez aussi les autres icônes manquantes :
+- apple-touch-icon.png (180x180px)
+- favicon-32x32.png (32x32px) 
+- favicon-16x16.png (16x16px)
+
+Pour le moment, nous allons supprimer les références aux icônes manquantes.
